@@ -1,0 +1,44 @@
+# demonstration of comparing 2 facial images
+# The higher the distance the more apart the match
+# The lower the distance the more similar the match
+
+from deepface import DeepFace
+import cv2
+import matplotlib.pyplot as plt
+
+
+# First test --------------------------
+print("First test")
+
+img1=cv2.imread('C:/Users/User/Desktop/AI/python/Faces/1.jfif')
+plt.imshow(img1[:, :, :: - 1])
+plt.show()
+
+img2=cv2.imread('C:/Users/User/Desktop/AI/python/Faces/2.jfif')
+plt.imshow(img2[:, :, :: - 1])
+plt.show()
+
+result = DeepFace.verify(img1, img2)
+
+print("The 1st image and 2nd image are the same face: ", result["verified"])
+print("1st image and 2nd image distance: ", result["distance"])
+
+
+
+# Second test --------------------------
+print("2nd test")
+
+img3=cv2.imread('C:/Users/User/Desktop/AI/python/Faces/3.jfif')
+plt.imshow(img3[:, :, :: - 1])
+plt.show()
+
+img4=cv2.imread('C:/Users/User/Desktop/AI/python/Faces/4.jfif')
+plt.imshow(img4[:, :, :: - 1])
+plt.show()
+
+result = DeepFace.verify(img3, img4)
+
+print("The 2nd image and 3rd image are the same face: ", result["verified"])
+print("3rd image and 4th image distance: ", result["distance"])
+# The higher the distance the more apart the match
+

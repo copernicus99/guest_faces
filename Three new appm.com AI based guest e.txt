@@ -1,0 +1,67 @@
+Three new app/m.com AI based guest experience improvement
+
+----------Feature 1
+Facial recognition
+Technologies to be used
+Written explanation
+
+
+1.Opt-into an onlocation facial recognition service 
+
+     Provide us a photo and get additional VIP serices when available!
+    Just upload your photo into Account > Settings, and when possible, our on-property systems and staff will offer additional services and opportunities during your stay
+
+----------
+     If matched upon arrival (using the image matching model) on prop PMS systems can identify if their membership level and prep last minute offers 
+     (staff greets guest at door, greets by name, handles bags, offer bottle water, escort to check-in etc.
+
+     If matched at front desk, staff can confirm guest name and update on any recent offers or considerations based on guests past selections
+     If matched at valet station, valet can confirm guest name and vehicle
+     If matched at restaurant, staff can address guest by name and recommend food/drink choices
+
+     Log-on-to Netflix and other social accounts, etc confirms preferances,
+----------
+
+ISSUES:
+	volume of data being sent offsite...cameras always running and lobby aways full of people
+		mitigation...use S3 optimized CCTVs that can output faces dirctly to S3
+
+	data transmission bottlenecks create a real time response delay to the guest
+		mitigation same as above
+
+	how to prevent multiple matches (for same person) in a single day....twins?
+
+	how will PMS handle multiple matches (for different guests) at the same time
+		mitigation....only show matches for 10-15 secs on the PMs then kill the window
+
+	might be best to pilot this only at the 
+		front desk - to offer a more personal checkin
+		activity centers, bars and restaurants - requires F&B system history and notificaton options
+
+
+
+
+
+-------------Feature 2
+Whats the Plan....
+Written explanation
+Technologies to be used
+----
+Provide # of nights
+Budget (dollars or points)
+Area of interest
+	Major Citie(s) and distance out
+	Or anywhere
+
+
+
+
+-------------Feature 3
+Pocket concierige
+Written explanation
+Technologies to be used
+
+
+
+
+

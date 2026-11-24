@@ -1,0 +1,5 @@
+APIgateways3
+s3-bucket-policy
+ARN=arn:aws:iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs
+    arn:aws:iam::266053915230:policy/s3-bucket-policy
+GuestAPI
